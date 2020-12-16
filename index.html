@@ -18,14 +18,13 @@
                 <button>Add</button>
                 <h2>Todo List</h2>
                 <ul>
-                    <li>Cosa 1<i class="far fa-times-circle"></i></li>
-                    <li>Cosa 2<i class="far fa-times-circle"></i></li>
-                    <li>Cosa 3<i class="far fa-times-circle"></i></li>
+                    <li v-for="task in tasks" v-text="task"></li>
                 </ul>
             </div>
         </div>
         
-        
+
+        <!-- icon: '<i class="far fa-times-circle"></i>' -->
 
         <!-- Vue -->
         <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>

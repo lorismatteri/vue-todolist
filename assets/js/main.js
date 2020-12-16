@@ -8,3 +8,21 @@ console.log('ciaone');
 //Se non ci sono piu task nella lista, mostrate un messaggio tipo "Nulla da fare"
 //Quando l'utente inserisce una task ha due modi per salvarla: o preme il pulsante add o preme il taso Enter della tastiera.
 //Attenzione: l'utente non deve inserire tasks vuote ma almeno un tot di caratteri.
+
+let app = new Vue({
+    el: '#app',
+    data:{
+        tasks: [
+            'Cosa 1',
+            'Cosa 2',
+            'Cosa 3',
+            'Cosa 4'
+        ]
+    },
+    methods: {
+
+    }
+})
+
+
+/* icon: '<i class="far fa-times-circle"></i>', */
