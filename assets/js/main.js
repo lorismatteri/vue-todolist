@@ -23,6 +23,9 @@ let app = new Vue({
             this.tasks.push(this.task);
             console.log(this.task);
             this.task = "";
+        },
+        togli: function(index) {
+            this.tasks.splice(index, 1);
         }
     },
     mounted() {
