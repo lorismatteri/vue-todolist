@@ -12,6 +12,7 @@ console.log('ciaone');
 let app = new Vue({
     el: '#app',
     data:{
+        task: "",
         tasks: [
             'Cosa 1',
             'Cosa 2',
@@ -20,9 +21,10 @@ let app = new Vue({
         ]
     },
     methods: {
-
+        aggiungi() {
+            this.tasks.push(task)
+        }
     }
 })
 
 
-/* icon: '<i class="far fa-times-circle"></i>', */

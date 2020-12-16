@@ -14,8 +14,8 @@
         <div id="app" class="container">
             <div class="card">
                 <img src="assets/img/logo.png" alt="">
-                <input type="text">
-                <button>Add</button>
+                <input type="text" name="task" id="task" v-model="task">
+                <button @click="aggiungi">Add</button>
                 <h2>Todo List</h2>
                 <ul>
                     <li v-for="task in tasks" v-text="task"></li>
