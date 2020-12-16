@@ -30,12 +30,53 @@ body {
 
 input {
     width: 70%;
-    border: 0;
+    border: 1px solid #001632;;
     border-radius: 1rem;
     margin: 1rem;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+input:focus, button:focus {
+    outline: 0;
 }
 
 button {
     width: 20%;
+    border: 1px solid #001632;
+    border-radius: 1rem;
+    padding: 0.25rem 1rem;
+    color: #001632;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: #001632;
+    color: #0CD977;
+    cursor: pointer;
+}
+
+.card h2 {
+    margin: 1rem 0;
+}
+
+.card ul {
+    list-style: none;
+    min-width: 30%;
+}
+
+.card ul li {
+    background-color: aliceblue;
+    border: 1px solid #001632;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card ul li i:hover {
+    transform: scale(1.5);
+    cursor: pointer;
 }
