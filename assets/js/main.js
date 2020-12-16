@@ -1,4 +1,3 @@
-console.log('ciaone');
 //Istruzioni:
 //Create una todo list usando VueJS.
 //Funzionalitá:
