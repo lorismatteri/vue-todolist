@@ -25,6 +25,14 @@ let app = new Vue({
             console.log(this.task);
             this.task = "";
         }
+    },
+    mounted() {
+        document.addEventListener('keyup', e => {
+            console.log(e);
+            if(e.key === "Enter"){
+                this.aggiungi()
+            }
+        })
     }
 })
 
