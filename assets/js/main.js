@@ -17,12 +17,13 @@ let app = new Vue({
             'Cosa 1',
             'Cosa 2',
             'Cosa 3',
-            'Cosa 4'
         ]
     },
     methods: {
-        aggiungi() {
-            this.tasks.push(task)
+        aggiungi: function() {
+            this.tasks.push(this.task);
+            console.log(this.task);
+            this.task = "";
         }
     }
 })
