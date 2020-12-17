@@ -14,12 +14,13 @@
         <div id="app" class="container">
             <div class="card">
                 <img src="assets/img/logo.png" alt="">
-                <input type="text" name="task" id="task" minlength="4" v-model="task">
+                <input type="text" name="task" id="task" v-model="task">
                 <button @click="aggiungi">Add</button>
                 <h2>Todo List</h2>
                 <ul v-if="tasks.length > 0">
                     <li v-for="(task, index) in tasks">{{ task }}<i class="far fa-times-circle" @click="togli(index)"></i></li>
                 </ul>
+                <!-- Se non ci sono piu task nella lista, mostrate un messaggio tipo "Nulla da fare" -->
                 <h3 v-else>Non hai nulla da fare. Puoi tornare a fare schifo.</h3>
             </div>
         </div>

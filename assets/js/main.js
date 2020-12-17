@@ -1,8 +1,6 @@
 //Istruzioni:
 //Create una todo list usando VueJS.
 //Funzionalitá:
-//Se non ci sono piu task nella lista, mostrate un messaggio tipo "Nulla da fare"
-//Attenzione: l'utente non deve inserire tasks vuote ma almeno un tot di caratteri.
 
 let app = new Vue({
     el: '#app',
@@ -18,8 +16,13 @@ let app = new Vue({
     methods: {
         //L'utente puó inserire nuove tasks
         aggiungi: function() {
-            this.tasks.push(this.task);
-            console.log(this.task);
+            //Attenzione: l'utente non deve inserire tasks vuote ma almeno un tot di caratteri.
+            if(this.task.length >= 4) {
+                this.tasks.push(this.task);
+                console.log(this.task);
+            } else {
+                alert('Devi inserire una task di almeno 4 caratteri')
+            }
             this.task = "";
         },
         //Cliccando sulla "X" l'utente puó cancellare una task
@@ -30,7 +33,6 @@ let app = new Vue({
     //Quando l'utente inserisce una task ha due modi per salvarla: o preme il pulsante add o preme il taso Enter della tastiera.
     mounted() {
         document.addEventListener('keyup', e => {
-            
             if(e.key === "Enter"){
                 this.aggiungi()
             }
