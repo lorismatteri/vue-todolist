@@ -76,7 +76,14 @@ button:hover {
     align-items: center;
 }
 
+.card ul li i {
+    padding: 0 0.5rem;
+    transition: all 0.25s ease-in;
+}
+
 .card ul li i:hover {
     transform: scale(1.5);
+    color: red;
     cursor: pointer;
 }
+
